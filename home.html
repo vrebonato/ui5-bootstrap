@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrapping</title>
+
+    <script 
+        type="text/javascript"
+        src="https://ui5.sap.com/resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_belize"
+        data-sap-ui-libs="sap.m"
+        >
+    </script>
+
+    <script>
+
+        var oInput = new sap.m.Input();             // Adiciona a função a uma variavel
+        oInput.placeAt("root");                     // Adiciona um campo de entrada ao div id root 
+
+        var oNota = new sap.m.RatingIndicator();    
+        oNota.placeAt("root").setValue(3);
+
+        var oSlider = new sap.m.Slider();
+        oSlider
+            .setValue(60)
+            .placeAt("root", "first");
+
+    </script>    
+
+</head>
+<body>
+    <div id="root"> </div>   
+</body>
+</html>
